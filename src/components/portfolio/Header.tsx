@@ -34,7 +34,7 @@ const Header = () => {
             <Sofa className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <span className={`font-display font-bold text-xl ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-            Avinya<span className="text-primary-glow">.</span>
+            Avinya Interiors<span className="text-primary-glow">.</span>
           </span>
         </a>
 
