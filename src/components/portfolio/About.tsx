@@ -1,3 +1,5 @@
+import aboutLogo from "@/assets/about-portrait.jpg";
+
 const About = () => {
   return (
     <section id="about" className="py-24 md:py-32 gradient-soft">
@@ -6,11 +8,11 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <div className="absolute -inset-6 gradient-primary rounded-[2rem] blur-2xl opacity-30" />
-            <div className="relative rounded-[2rem] overflow-hidden shadow-bold border-4 border-primary-foreground">
+            <div className="relative rounded-[2rem] overflow-hidden shadow-bold border-4 border-primary-foreground bg-background flex items-center justify-center p-8">
               <img
-                src="https://res.cloudinary.com/dfdrpegbr/image/upload/v1776614643/WhatsApp_Image_2026-04-19_at_9.28.48_PM_hmqqyj.jpg"
-                alt="Founder of Avinya Interiors — interior and graphic designer"
-                className="w-full h-full object-cover aspect-[4/5]"
+                src={aboutLogo}
+                alt="Avinya Interiors logo — Art of Living Stylish"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </div>
