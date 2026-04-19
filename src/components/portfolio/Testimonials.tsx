@@ -12,8 +12,8 @@ const items: Testimonial[] = [
   {
     image:
       "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg",
-    name: "Priya Sharma",
-    role: "Boutique Owner",
+    name: "​",
+    role: "​",
     quote:
       "Avinya transformed my store into a space that finally feels like my brand. Customers stay longer and buy more — the design speaks for itself.",
   },
