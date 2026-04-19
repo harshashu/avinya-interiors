@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import avinyaIcon from "@/assets/avinya-icon.png";
+import avinyaIcon from "@/assets/avinya-icon-new.jpeg";
 
 const links = [
   { href: "#home", label: "Home" },
