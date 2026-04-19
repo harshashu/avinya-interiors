@@ -28,8 +28,8 @@ const items: Testimonial[] = [
   {
     image:
       "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg",
-    name: "Anita Verma",
-    role: "Wellness Studio",
+    name: "​",
+    role: "​",
     quote:
       "She truly listened to my vision and brought a calming, premium feel to my space. I get compliments from clients every single day.",
   },
