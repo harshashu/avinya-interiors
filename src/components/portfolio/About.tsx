@@ -16,11 +16,6 @@ const About = () => {
                 loading="lazy"
               />
             </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground rounded-2xl p-5 shadow-glow rotate-3 hover:rotate-0 transition-bounce">
-              <div className="font-display font-bold text-2xl">Avinya</div>
-              <div className="text-xs uppercase tracking-widest opacity-90">Interiors</div>
-            </div>
           </div>
 
           {/* Content */}
