@@ -1,4 +1,5 @@
 import { Instagram, Mail } from "lucide-react";
+import avinyaIcon from "@/assets/avinya-icon-footer.jpeg";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -8,8 +9,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-glow">
-                <span className="text-primary-foreground font-display font-bold text-lg">A</span>
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-glow bg-primary-foreground flex items-center justify-center">
+                <img src={avinyaIcon} alt="Avinya Interiors" className="w-full h-full object-contain" />
               </div>
               <span className="font-display font-bold text-xl">
                 Avinya<span className="text-primary-glow">.</span>
