@@ -20,8 +20,8 @@ const items: Testimonial[] = [
   {
     image:
       "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg",
-    name: "Rohan Mehta",
-    role: "Café Founder",
+    name: "​",
+    role: "​",
     quote:
       "From mood boards to the final reveal, the process was creative and stress-free. The graphics tied everything together beautifully.",
   },
