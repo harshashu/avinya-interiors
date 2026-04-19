@@ -30,7 +30,7 @@ const Header = () => {
     >
       <nav className="container flex items-center justify-between h-20">
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-glow group-hover:scale-110 transition-bounce">
+          <div className="w-10 h-10 rounded-xl gradient-primary shadow-glow group-hover:scale-110 transition-bounce flex items-center justify-center text-primary-foreground bg-primary-foreground">
             <span className="text-primary-foreground font-display font-bold text-lg">A</span>
           </div>
           <span className={`font-display font-bold text-xl ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
