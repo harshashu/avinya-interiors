@@ -13,7 +13,7 @@ const Footer = () => {
                 <img src={avinyaIcon} alt="Avinya Interiors" className="w-full h-full object-contain" />
               </div>
               <span className="font-display font-bold text-xl">
-                Avinya<span className="text-primary-glow">.</span>
+                Avinya Interiors<span className="text-primary-glow">.</span>
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
