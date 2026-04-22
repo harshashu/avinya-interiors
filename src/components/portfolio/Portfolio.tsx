@@ -80,10 +80,21 @@ const Portfolio = () => {
         {/* Overview Video */}
         <div className="relative max-w-5xl mx-auto mt-16">
           <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
-          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden bg-primary-deep shadow-bold border-4 border-primary">
+          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden shadow-bold border-4 border-primary">
+            {/* Blurred video background — same source, fills letterbox area */}
             <video
               src={overviewVideo}
-              className="w-full h-full object-contain bg-primary-deep"
+              className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl"
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-hidden="true"
+            />
+            {/* Foreground video */}
+            <video
+              src={overviewVideo}
+              className="relative w-full h-full object-contain"
               autoPlay
               loop
               muted
