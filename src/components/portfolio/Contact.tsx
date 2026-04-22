@@ -1,4 +1,4 @@
-import { Mail, Instagram, ArrowRight } from "lucide-react";
+import { Mail, Instagram, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -44,6 +44,16 @@ const Contact = () => {
                   <Mail size={20} />
                 </div>
                 <span className="font-semibold">avinyainteriors.ai@gmail.com</span>
+              </a>
+
+              <a
+                href="tel:+919177112409"
+                className="inline-flex items-center gap-3 text-primary-foreground hover:text-primary-foreground/80 transition-smooth group"
+              >
+                <div className="w-12 h-12 rounded-full bg-primary-foreground/15 backdrop-blur-md border border-primary-foreground/30 flex items-center justify-center group-hover:scale-110 transition-bounce">
+                  <Phone size={20} />
+                </div>
+                <span className="font-semibold">+91 91771 12409</span>
               </a>
 
               <a
