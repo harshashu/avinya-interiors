@@ -2,7 +2,7 @@ import aboutLogo from "@/assets/about-portrait.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 gradient-soft">
+    <section id="about" className="py-24 md:py-32 bg-secondary">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
