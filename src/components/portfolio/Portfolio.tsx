@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import portfolioShowcase from "@/assets/portfolio-showcase.mp4";
 
 type Slide =
   | { type: "image"; src: string; alt: string }
-  | { type: "video"; src: string; title: string };
+  | { type: "video"; src: string; title: string }
+  | { type: "file-video"; src: string; title: string };
 
 const slides: Slide[] = [
   {
@@ -12,14 +14,9 @@ const slides: Slide[] = [
     alt: "Interior design project by Avinya Interiors",
   },
   {
-    type: "video",
-    src: "https://player.vimeo.com/video/1184534835?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&muted=1",
-    title: "Avinya Interiors — Project Showcase 1",
-  },
-  {
-    type: "video",
-    src: "https://player.vimeo.com/video/1184533595?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&muted=1",
-    title: "Avinya Interiors — Project Showcase 2",
+    type: "file-video",
+    src: portfolioShowcase,
+    title: "Avinya Interiors — Project Showcase",
   },
 ];
 
