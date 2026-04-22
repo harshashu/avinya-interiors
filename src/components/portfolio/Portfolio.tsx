@@ -62,6 +62,16 @@ const Portfolio = () => {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
+                ) : slide.type === "file-video" ? (
+                  <video
+                    src={slide.src}
+                    title={slide.title}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
                 ) : (
                   <iframe
                     src={slide.src}
