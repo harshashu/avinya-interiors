@@ -1,8 +1,24 @@
-import portfolioShowcase from "@/assets/portfolio-showcase.mp4";
-import portfolioShowcase2 from "@/assets/portfolio-showcase-2.mp4";
+import bedroom1 from "@/assets/portfolio/bedroom-1.webp";
+import bedroom2 from "@/assets/portfolio/bedroom-2.webp";
+import bedroom3 from "@/assets/portfolio/bedroom-3.avif";
+import kitchen1 from "@/assets/portfolio/kitchen-1.jpg";
+import kitchen2 from "@/assets/portfolio/kitchen-2.jpeg";
+import kitchen3 from "@/assets/portfolio/kitchen-3.jpg";
 
 const heroImage =
   "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg";
+
+const galleryRow1 = [
+  { src: bedroom1, alt: "Modern bedroom interior design" },
+  { src: bedroom2, alt: "Contemporary bedroom with wardrobe" },
+  { src: bedroom3, alt: "Elegant bedroom interior" },
+];
+
+const galleryRow2 = [
+  { src: kitchen1, alt: "Modular kitchen with mosaic backsplash" },
+  { src: kitchen2, alt: "Bright modern modular kitchen" },
+  { src: kitchen3, alt: "L-shaped modular kitchen design" },
+];
 
 const Portfolio = () => {
   return (
@@ -21,8 +37,8 @@ const Portfolio = () => {
           </p>
         </div>
 
-        {/* Image */}
-        <div className="relative max-w-6xl mx-auto mb-12">
+        {/* Hero Image */}
+        <div className="relative max-w-6xl mx-auto mb-10">
           <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
           <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden bg-primary-deep shadow-bold border-4 border-primary">
             <img
@@ -34,36 +50,30 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Video below the image */}
-        <div className="relative max-w-6xl mx-auto">
-          <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
-          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden bg-primary-deep shadow-bold border-4 border-primary">
-            <video
-              src={portfolioShowcase}
-              title="Avinya Interiors — Project Showcase"
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </div>
-        </div>
+        {/* Tagline */}
+        <p className="text-center max-w-4xl mx-auto font-display text-xl md:text-2xl lg:text-3xl font-bold text-primary tracking-wide uppercase mb-12 leading-snug">
+          End-to-End Interiors and Modular Kitchens and Living Rooms for Happiest Moments
+        </p>
 
-        {/* Second video below */}
-        <div className="relative max-w-6xl mx-auto mt-12">
-          <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
-          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden bg-primary-deep shadow-bold border-4 border-primary">
-            <video
-              src={portfolioShowcase2}
-              title="Avinya Interiors — Project Showcase 2"
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-          </div>
+        {/* Gallery — 3 images per row */}
+        <div className="max-w-6xl mx-auto space-y-6">
+          {[galleryRow1, galleryRow2].map((row, rowIdx) => (
+            <div key={rowIdx} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {row.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-primary-deep shadow-bold border-4 border-primary"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>
