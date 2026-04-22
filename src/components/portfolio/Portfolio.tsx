@@ -1,4 +1,5 @@
 import portfolioShowcase from "@/assets/portfolio-showcase.mp4";
+import portfolioShowcase2 from "@/assets/portfolio-showcase-2.mp4";
 
 const heroImage =
   "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg";
@@ -40,6 +41,22 @@ const Portfolio = () => {
             <video
               src={portfolioShowcase}
               title="Avinya Interiors — Project Showcase"
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+          </div>
+        </div>
+
+        {/* Second video below */}
+        <div className="relative max-w-6xl mx-auto mt-12">
+          <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
+          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden bg-primary-deep shadow-bold border-4 border-primary">
+            <video
+              src={portfolioShowcase2}
+              title="Avinya Interiors — Project Showcase 2"
               className="w-full h-full object-cover"
               autoPlay
               loop
