@@ -51,8 +51,8 @@ const Portfolio = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-center max-w-4xl mx-auto font-display text-xl md:text-2xl lg:text-3xl font-bold text-primary tracking-wide uppercase mb-12 leading-snug">
-          End-to-End Interiors and Modular Kitchens and Living Rooms for Happiest Moments
+        <p className="text-center max-w-4xl mx-auto font-display text-xl md:text-2xl lg:text-3xl font-bold tracking-wide uppercase mb-12 leading-snug text-primary-glow">
+          End-to-End Interior Solutions & Modular Kitchens for Joyful Living Spaces
         </p>
 
         {/* Gallery — 3 images per row */}
