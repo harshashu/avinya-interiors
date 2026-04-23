@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { z } from "zod";
-import { CalendarCheck, Send } from "lucide-react";
+import { CalendarCheck, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -153,8 +153,8 @@ const Booking = () => {
                 className="w-full gradient-primary text-primary-foreground hover:scale-[1.02] transition-bounce font-bold text-base h-14 rounded-full shadow-bold border-0 group"
               >
                 <CalendarCheck size={20} className="mr-2" />
-                {submitting ? "Sending…" : "Book My Free Consultation"}
-                <Send
+                {submitting ? "Opening WhatsApp…" : "Book My Free Consultation"}
+                <MessageCircle
                   size={18}
                   className="ml-2 group-hover:translate-x-1 transition-smooth"
                 />
