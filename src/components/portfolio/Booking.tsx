@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { z } from "zod";
-import { CalendarCheck, Send } from "lucide-react";
+import { CalendarCheck, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -47,13 +47,22 @@ const Booking = () => {
     }
 
     setSubmitting(true);
-    const subject = `Free Design Consultation — ${result.data.name}`;
-    const body = `Name: ${result.data.name}%0D%0AEmail: ${result.data.email}%0D%0APhone: ${result.data.phone}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(result.data.message ?? "")}`;
-    window.location.href = `mailto:avinyainteriors.ai@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const lines = [
+      "*New Free Design Consultation Request*",
+      "",
+      `*Name:* ${result.data.name}`,
+      `*Email:* ${result.data.email}`,
+      `*Phone:* ${result.data.phone}`,
+    ];
+    if (result.data.message && result.data.message.length > 0) {
+      lines.push("", "*Project details:*", result.data.message);
+    }
+    const waText = encodeURIComponent(lines.join("\n"));
+    window.open(`https://wa.me/919177112409?text=${waText}`, "_blank", "noopener,noreferrer");
 
     toast({
-      title: "Opening your email…",
-      description: "Thanks! I'll get back to you within 24 hours.",
+      title: "Opening WhatsApp…",
+      description: "Send the prefilled message and I'll reply within 24 hours.",
     });
     setTimeout(() => setSubmitting(false), 800);
   };
@@ -144,8 +153,8 @@ const Booking = () => {
                 className="w-full gradient-primary text-primary-foreground hover:scale-[1.02] transition-bounce font-bold text-base h-14 rounded-full shadow-bold border-0 group"
               >
                 <CalendarCheck size={20} className="mr-2" />
-                {submitting ? "Sending…" : "Book My Free Consultation"}
-                <Send
+                {submitting ? "Opening WhatsApp…" : "Book My Free Consultation"}
+                <MessageCircle
                   size={18}
                   className="ml-2 group-hover:translate-x-1 transition-smooth"
                 />
