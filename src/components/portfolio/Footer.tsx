@@ -25,12 +25,12 @@ const Footer = () => {
             <h4 className="font-display font-bold text-sm tracking-widest uppercase mb-4 text-primary-glow">
               Explore
             </h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#home" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Home size={16} /> Home</a></li>
-              <li><a href="#about" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><User size={16} /> About</a></li>
-              <li><a href="#portfolio" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Briefcase size={16} /> Portfolio</a></li>
-              <li><a href="#testimonials" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><MessageSquareQuote size={16} /> Testimonials</a></li>
-              <li><a href="#contact" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Send size={16} /> Contact</a></li>
+            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-primary-foreground/80">
+              <li><a href="#home" className="flex items-center gap-1.5 hover:text-primary-glow transition-smooth"><Home size={16} /> Home</a></li>
+              <li><a href="#about" className="flex items-center gap-1.5 hover:text-primary-glow transition-smooth"><User size={16} /> About</a></li>
+              <li><a href="#portfolio" className="flex items-center gap-1.5 hover:text-primary-glow transition-smooth"><Briefcase size={16} /> Portfolio</a></li>
+              <li><a href="#testimonials" className="flex items-center gap-1.5 hover:text-primary-glow transition-smooth"><MessageSquareQuote size={16} /> Testimonials</a></li>
+              <li><a href="#contact" className="flex items-center gap-1.5 hover:text-primary-glow transition-smooth"><Send size={16} /> Contact</a></li>
             </ul>
           </div>
 
