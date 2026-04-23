@@ -1,4 +1,4 @@
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Home, User, Briefcase, MessageSquareQuote, Send } from "lucide-react";
 import avinyaIcon from "@/assets/avinya-icon-footer.jpeg";
 
 const Footer = () => {
@@ -26,10 +26,11 @@ const Footer = () => {
               Explore
             </h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#about" className="hover:text-primary-glow transition-smooth">About</a></li>
-              <li><a href="#portfolio" className="hover:text-primary-glow transition-smooth">Portfolio</a></li>
-              <li><a href="#testimonials" className="hover:text-primary-glow transition-smooth">Testimonials</a></li>
-              <li><a href="#contact" className="hover:text-primary-glow transition-smooth">Contact</a></li>
+              <li><a href="#home" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Home size={16} /> Home</a></li>
+              <li><a href="#about" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><User size={16} /> About</a></li>
+              <li><a href="#portfolio" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Briefcase size={16} /> Portfolio</a></li>
+              <li><a href="#testimonials" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><MessageSquareQuote size={16} /> Testimonials</a></li>
+              <li><a href="#contact" className="flex items-center gap-2 hover:text-primary-glow transition-smooth"><Send size={16} /> Contact</a></li>
             </ul>
           </div>
 
@@ -61,7 +62,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-primary-foreground/60">
-          <p>© {year} Avinya Interiors. All rights reserved.</p>
+          <p>© 2024 Avinya Interiors. All rights reserved.</p>
           <p>Designed with intention. Built to inspire.</p>
         </div>
       </div>

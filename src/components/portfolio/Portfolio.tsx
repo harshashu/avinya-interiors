@@ -52,9 +52,9 @@ const Portfolio = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-center max-w-4xl mx-auto font-display text-xl md:text-2xl lg:text-3xl font-bold tracking-wide uppercase mb-12 leading-snug text-primary-glow">
-          End-to-End Interior Solutions & Modular Kitchens for Joyful Living Spaces
-        </p>
+        <h3 className="text-center max-w-4xl mx-auto font-display text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 leading-tight">
+          End-to-End Interior Solutions & <span className="text-gradient">Modular Kitchens</span> for Joyful Living Spaces
+        </h3>
 
         {/* Gallery — 3 images per row */}
         <div className="max-w-6xl mx-auto space-y-6">
