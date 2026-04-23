@@ -65,6 +65,9 @@ const Footer = () => {
           <p>© 2024 Avinya Interiors. All rights reserved.</p>
           <p>Designed with intention. Built to inspire.</p>
         </div>
+        <div className="mt-4 text-center">
+          <p className="text-[10px] tracking-wide text-primary-foreground/40">Created by Harsha</p>
+        </div>
       </div>
     </footer>
   );
