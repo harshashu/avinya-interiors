@@ -1,4 +1,4 @@
-import { Mail, Instagram, ArrowRight, Phone } from "lucide-react";
+import { Mail, Instagram, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -27,9 +27,12 @@ const Contact = () => {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:scale-105 transition-bounce font-bold text-base h-14 px-8 rounded-full shadow-bold border-0 group"
             >
               <a
-                href="mailto:avinyainteriors.ai@gmail.com?subject=Start%20My%20Design%20Journey"
+                href={`https://wa.me/919177112409?text=${encodeURIComponent("Hi! I'd like to start my design journey with Avinya Interiors.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
               >
+                <MessageCircle size={20} />
                 Start Your Design Journey — Work With Me
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-smooth" />
               </a>
