@@ -66,7 +66,12 @@ const Hero = () => {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-bold hover:scale-105 transition-bounce font-bold text-base h-14 px-8 rounded-full group border-0"
             >
-              <a href="#contact" className="inline-flex items-center gap-2">
+              <a
+                href={`https://wa.me/919491047484?text=${encodeURIComponent("Hi! I'd like to start my design journey with Avinya Interiors.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
                 Start Your Design Journey
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-smooth" />
               </a>
