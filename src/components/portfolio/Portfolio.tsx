@@ -4,7 +4,6 @@ import bedroom3 from "@/assets/portfolio/bedroom-3.avif";
 import kitchen1 from "@/assets/portfolio/kitchen-1.jpg";
 import kitchen2 from "@/assets/portfolio/kitchen-2.jpeg";
 import kitchen3 from "@/assets/portfolio/kitchen-3.jpg";
-import overviewVideo from "@/assets/portfolio/overview-video.mp4";
 
 const heroImage =
   "https://res.cloudinary.com/dfdrpegbr/image/upload/v1776599925/WhatsApp_Image_2026-04-19_at_5.01.46_PM_ajrxro.jpg";
@@ -77,32 +76,6 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Overview Video */}
-        <div className="relative max-w-5xl mx-auto mt-16">
-          <div className="absolute -inset-4 gradient-primary rounded-[2rem] blur-2xl opacity-20" />
-          <div className="relative aspect-video w-full rounded-[2rem] overflow-hidden shadow-bold border-4 border-primary">
-            {/* Blurred video background — same source, fills letterbox area */}
-            <video
-              src={overviewVideo}
-              className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl"
-              autoPlay
-              loop
-              muted
-              playsInline
-              aria-hidden="true"
-            />
-            {/* Foreground video */}
-            <video
-              src={overviewVideo}
-              className="relative w-full h-full object-contain"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls
-            />
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -42,10 +42,9 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-4">
+            <div className="mt-10 grid grid-cols-1 gap-4">
               {[
                 { title: "Interior Design", desc: "Spaces with soul" },
-                { title: "Graphic Design", desc: "Brands that connect" },
               ].map((item) => (
                 <div
                   key={item.title}
