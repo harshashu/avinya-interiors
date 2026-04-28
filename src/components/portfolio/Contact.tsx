@@ -27,7 +27,7 @@ const Contact = () => {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:scale-105 transition-bounce font-bold text-base h-14 px-8 rounded-full shadow-bold border-0 group"
             >
               <a
-                href={`https://wa.me/919177112409?text=${encodeURIComponent("Hi! I'd like to start my design journey with Avinya Interiors.")}`}
+                href={`https://wa.me/919491047484?text=${encodeURIComponent("Hi! I'd like to start my design journey with Avinya Interiors.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
@@ -47,16 +47,6 @@ const Contact = () => {
                   <Mail size={20} />
                 </div>
                 <span className="font-semibold">avinyainteriors.ai@gmail.com</span>
-              </a>
-
-              <a
-                href="tel:+919177112409"
-                className="inline-flex items-center gap-3 text-primary-foreground hover:text-primary-foreground/80 transition-smooth group"
-              >
-                <div className="w-12 h-12 rounded-full bg-primary-foreground/15 backdrop-blur-md border border-primary-foreground/30 flex items-center justify-center group-hover:scale-110 transition-bounce">
-                  <Phone size={20} />
-                </div>
-                <span className="font-semibold">+91 91771 12409</span>
               </a>
 
               <a

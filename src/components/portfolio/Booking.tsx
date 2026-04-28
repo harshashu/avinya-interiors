@@ -58,7 +58,7 @@ const Booking = () => {
       lines.push("", "*Project details:*", result.data.message);
     }
     const waText = encodeURIComponent(lines.join("\n"));
-    window.open(`https://wa.me/919177112409?text=${waText}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/919491047484?text=${waText}`, "_blank", "noopener,noreferrer");
 
     toast({
       title: "Opening WhatsApp…",

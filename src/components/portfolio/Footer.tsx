@@ -57,7 +57,6 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-primary-foreground/60 text-sm">avinyainteriors.ai@gmail.com</p>
-            <a href="tel:+919177112409" className="text-primary-foreground/60 text-sm hover:text-primary-glow transition-smooth block mt-1">+91 91771 12409</a>
             <a href="tel:+919491047484" className="text-primary-foreground/60 text-sm hover:text-primary-glow transition-smooth block mt-1">+91 94910 47484</a>
           </div>
         </div>
