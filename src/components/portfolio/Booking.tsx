@@ -57,12 +57,24 @@ const Booking = () => {
     if (result.data.message && result.data.message.length > 0) {
       lines.push("", "*Project details:*", result.data.message);
     }
-    const waText = encodeURIComponent(lines.join("\n"));
+    const messageBody = lines.join("\n");
+    const waText = encodeURIComponent(messageBody);
     window.open(`https://wa.me/919491047484?text=${waText}`, "_blank", "noopener,noreferrer");
 
+    // Also open the user's default mail client with the same details prefilled
+    const mailSubject = encodeURIComponent("New Free Design Consultation Request");
+    const mailBody = encodeURIComponent(messageBody.replace(/\*/g, ""));
+    setTimeout(() => {
+      window.open(
+        `mailto:avinyainteriors.ai@gmail.com?subject=${mailSubject}&body=${mailBody}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }, 400);
+
     toast({
-      title: "Opening WhatsApp…",
-      description: "Send the prefilled message and I'll reply within 24 hours.",
+      title: "Opening WhatsApp & Email…",
+      description: "Send both prefilled messages and I'll reply within 24 hours.",
     });
     setTimeout(() => setSubmitting(false), 800);
   };
